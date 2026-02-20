@@ -1,0 +1,22 @@
+{
+  "name": "seo-geo-rewriter",
+  "version": "1.0.0",
+  "description": "SEO/GEO optimized HTML content rewriter CLI",
+  "type": "module",
+  "bin": {
+    "seo-rewrite": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test tests/*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage tests/"
+  },
+  "keywords": ["seo", "geo", "html", "optimizer", "rewriter", "ai-search"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "node-html-parser": "^6.1.13"
+  }
+}
