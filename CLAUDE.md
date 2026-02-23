@@ -12,8 +12,15 @@ SEO/GEO Content Rewriter — optimizes articles for traditional SEO and AI searc
 
 ### Conversational Workflow (`/seo-geo-rewriter`)
 - **Skill**: `~/.claude/skills/seo-geo-rewriter/SKILL.md`
+- **Skill source**: `skills/seo-geo-rewriter/SKILL.md` (프로젝트 내 원본)
 - **Input**: Plain text article pasted in chat (+ optional keyword)
 - **Output**: 제목, Post URL(slug), 메타 설명, Excerpt, 최적화 본문 HTML
+
+**스킬 설치 (최초 1회 필수):**
+```bash
+ln -s /Users/hyungwoon/Documents/AI/seo-geo-agent/skills/seo-geo-rewriter ~/.claude/skills/seo-geo-rewriter
+```
+`unknown-skill` 오류가 나오면 위 명령어를 실행하지 않은 것. 심링크로 연결해야 Claude Code가 인식함.
 
 ### Sub-agents (`.claude/agents/`)
 - **seo-analyzer** — 분석 전용 (haiku). SEO/GEO 점수, 이슈 목록 반환
