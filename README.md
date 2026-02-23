@@ -23,7 +23,11 @@ Claude Code 채팅창에서 글을 붙여넣으면 바로 SEO/GEO 최적화 결�
 터미널에서 아래 명령어를 한 번 실행하세요:
 
 ```bash
-ln -s /Users/hyungwoon/Documents/AI/seo-geo-agent/skills/seo-geo-rewriter ~/.claude/skills/seo-geo-rewriter
+# 1. 레포 클론
+git clone https://github.com/hyungwoon/seo-geo-agent.git ~/seo-geo-agent
+
+# 2. 스킬 설치
+ln -s ~/seo-geo-agent/skills/seo-geo-rewriter ~/.claude/skills/seo-geo-rewriter
 ```
 
 > 설치 확인: `ls ~/.claude/skills/seo-geo-rewriter` 실행 시 `SKILL.md`가 보이면 성공.
